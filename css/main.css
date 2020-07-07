@@ -145,7 +145,7 @@ footer p a:hover::after{
     width:100%;
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
     .supervisor, .builder, .karma, .calculator{
         grid-column:1/13;
         grid-row:auto;
