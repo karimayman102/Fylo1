@@ -108,6 +108,27 @@ footer p{
     font-size:12px;
     text-align:center;
 }
+footer p a{
+    text-decoration:none;
+    color:hsl(234, 12%, 34%);
+    opacity:.8;
+    position:relative;
+}
+footer p a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    bottom:1px;
+    height:1px;
+    left:50%;
+    z-index:5;
+    transform:translatex(-50%);
+    background-color:hsl(234, 12%, 34%);
+    transition:.5s ease;
+}
+footer p a:hover::after{
+    width:100%;
+}
 @media(max-width:900px){
     .logo img{
         width:50px;
@@ -117,6 +138,9 @@ footer p{
     .supervisor, .builder, .karma, .calculator{
         grid-column:1/13;
         grid-row:auto;
+    }
+    footer{
+        grid-row:7/8
     }
 
 }
