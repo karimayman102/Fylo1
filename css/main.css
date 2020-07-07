@@ -74,7 +74,22 @@ article p{
     justify-content:flex-end;
     width:100%;
 }
-
+.calculator .logo img{
+    filter: drop-shadow(0 0 2px #0984e3);
+    filter:drop-shadow(0 0 5px #0F97FF);
+}
+.builder .logo img{
+    filter: drop-shadow(0 0 2px #c0392b);
+    filter:drop-shadow(0 0 5px #FF5647);
+}
+.supervisor .logo img{
+    filter: drop-shadow(0 0 2px #27B9EA);
+    filter:drop-shadow(0 0 5px #3DCEFF);
+}
+.karma .logo img{
+    filter: drop-shadow(0 0 2px #E3ED28);
+    filter:drop-shadow(0 0 5px #F5FF38);
+}
 .supervisor{
     grid-column:1/5;
     grid-row:4/7;
@@ -129,11 +144,7 @@ footer p a::after{
 footer p a:hover::after{
     width:100%;
 }
-@media(max-width:900px){
-    .logo img{
-        width:50px;
-    }
-}
+
 @media(max-width:991px){
     .supervisor, .builder, .karma, .calculator{
         grid-column:1/13;
@@ -148,7 +159,5 @@ footer p a:hover::after{
     header h1,header h2{
         font-size:20px;
     }
-    .logo img{
-        width:40px;
-    }
+
 }
