@@ -91,29 +91,47 @@ article p{
     filter:drop-shadow(0 0 5px #F5FF38);
 }
 .supervisor{
-    grid-column:1/5;
-    grid-row:4/7;
     border-top:2px solid hsl(180, 62%, 55%)
 }
-.builder{
-    grid-column:5/9;
-    grid-row:3/6;
-    border-top:2px solid hsl(0, 78%, 62%);
-}
-.karma{
-    grid-column:5/9;
-    grid-row:6/9;
-    border-top:2px solid hsl(34, 97%, 64%)
-}
-.calculator{
-    grid-column:9/13;
-    grid-row:4/7;
-    border-top:2px solid hsl(212, 86%, 64%)
-}
-footer{
-    grid-column:1/13;
-    grid-row:9/10;
-    padding:10px 0
+    .builder{
+        border-top:2px solid hsl(0, 78%, 62%);
+    }
+    .karma{
+        border-top:2px solid hsl(34, 97%, 64%)
+    }
+    .calculator{
+        border-top:2px solid hsl(212, 86%, 64%)
+    }
+    footer{
+        grid-column:1/13;
+        padding:10px 0
+    }
+@media(min-width:768px){
+    .supervisor{
+        grid-column:1/5;
+        grid-row:4/7;
+        border-top:2px solid hsl(180, 62%, 55%)
+    }
+    .builder{
+        grid-column:5/9;
+        grid-row:3/6;
+        border-top:2px solid hsl(0, 78%, 62%);
+    }
+    .karma{
+        grid-column:5/9;
+        grid-row:6/9;
+        border-top:2px solid hsl(34, 97%, 64%)
+    }
+    .calculator{
+        grid-column:9/13;
+        grid-row:4/7;
+        border-top:2px solid hsl(212, 86%, 64%)
+    }
+    footer{
+        grid-column:1/13;
+        grid-row:9/10;
+        padding:10px 0
+    }
 }
 footer p{
     color:hsl(234, 12%, 34%);
@@ -145,7 +163,7 @@ footer p a:hover::after{
     width:100%;
 }
 
-@media(max-width:767px){
+@media(max-width:991px){
     .supervisor, .builder, .karma, .calculator{
         grid-column:1/13;
         grid-row:auto;
